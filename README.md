@@ -10,9 +10,9 @@ Loosely based on [actions/create-github-app-token](https://github.com/actions/cr
 - uses: collinmcneese/action-github-app-auth@v1
   id: auth
   with:
-    app_id: ${{ secrets.APP_ID }}
-    private_key: ${{ secrets.PRIVATE_KEY }}
-    installation_id: ${{ secrets.INSTALLATION_ID }}
+    app_id: ${{ secrets.GITHUB_APP_ID }}
+    private_key: ${{ secrets.GITHUB_PRIVATE_KEY }}
+    installation_id: ${{ secrets.GITHUB_INSTALLATION_ID }}
 ```
 
 ## Inputs
@@ -50,9 +50,9 @@ jobs:
       - uses: collinmcneese/action-github-app-auth@v1
         id: auth
         with:
-          app_id: ${{ secrets.APP_ID }}
-          private_key: ${{ secrets.PRIVATE_KEY }}
-          installation_id: ${{ secrets.INSTALLATION_ID }}
+          app_id: ${{ secrets.GITHUB_APP_ID }}
+          private_key: ${{ secrets.GITHUB_PRIVATE_KEY }}
+          installation_id: ${{ secrets.GITHUB_INSTALLATION_ID }}
       - uses: actions/checkout@v4
         with:
           token: ${{ steps.auth.outputs.token }}

@@ -1,6 +1,6 @@
 {
   "name": "action-github-app-auth",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Minimal Action to use for authenticating as a GitHub App within Actions",
   "main": "dist/index.js",
   "scripts": {

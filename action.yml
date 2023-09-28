@@ -1,0 +1,21 @@
+name: github-app-auth
+description: Minimal Action to use for authenticating as a GitHub App within Actions
+inputs:
+  github_app_id:
+    description: 'The ID of the GitHub App'
+    required: true
+  github_app_private_key:
+    description: 'The private key of the GitHub App'
+    required: true
+  github_app_installation_id:
+    description: 'The ID of the installation of the GitHub App'
+    required: true
+
+outputs:
+  token:
+    description: 'The generated installation token'
+
+runs:
+  using: node20
+  main: dist/index.js
+  post: dist/post.js

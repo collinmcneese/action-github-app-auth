@@ -19,12 +19,12 @@
     "@vercel/ncc": "^0.38.0",
     "chai": "^4.3.8",
     "cspell": "^7.3.2",
-    "eslint": "^8.48.0",
+    "eslint": "^8.51.0",
     "eslint-config-strongloop": "^2.1.0",
     "eslint-plugin-jsdoc": "^46.8.0",
     "markdownlint-cli": "^0.37.0",
     "mocha": "^10.2.0",
     "nyc": "^15.1.0",
-    "sinon": "^16.0.0"
+    "sinon": "^16.1.0"
   }
 }

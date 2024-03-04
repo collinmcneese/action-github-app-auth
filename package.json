@@ -18,7 +18,7 @@
   "devDependencies": {
     "@vercel/ncc": "^0.38.1",
     "chai": "^5.1.0",
-    "cspell": "^8.4.1",
+    "cspell": "^8.5.0",
     "eslint": "^8.57.0",
     "eslint-config-strongloop": "^2.1.0",
     "eslint-plugin-jsdoc": "^48.2.0",
